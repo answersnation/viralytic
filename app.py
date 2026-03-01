@@ -1,5 +1,9 @@
 """VIRALYTIC Dashboard — Enhanced with Smart Collector"""
+import sys
+from pathlib import Path
 
+ROOT_DIR = Path(__file__).resolve().parent
+sys.path.append(str(ROOT_DIR))
 import streamlit as st
 import pandas as pd
 import numpy as np
@@ -588,5 +592,6 @@ def database_tab():
 if __name__ == "__main__":
 
     main()
+
 
 
