@@ -15,10 +15,10 @@ import time
 # Add parent to path
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
-from core.ingestor import ViralyticIngestor
-from core.pattern_engine import PatternEngine
-from core.predictor import ViralPredictor
-from core.optimizer import ViralOptimizer
+from viralyctic.core.ingestor import ViralycticIngestor
+from viralyctic.core.pattern_engine import PatternEngine
+from viralyctic.core.predictor import ViralPredictor
+from viralyctic.core.optimizer import ViralOptimizer
 from core.config import VideoFeatures
 
 # Page config
@@ -586,4 +586,5 @@ def database_tab():
         st.rerun()
 
 if __name__ == "__main__":
+
     main()
